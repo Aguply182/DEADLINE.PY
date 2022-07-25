@@ -54,7 +54,7 @@ for member in icm:
             string += f" » {member.user.mention}\n"
             limit += 1
         else:
-            await client.send_message(chat_id, text=string)
+            client.send_message(chat_id, text=string)
             limit = 1
             string = ""
             await asyncio.sleep(2)
