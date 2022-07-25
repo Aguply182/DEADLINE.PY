@@ -49,7 +49,7 @@ async def tagall(client: Client, message: Message):
     string = "**Mention all :\n**"
     limit = 1
     icm = client.get_chat_members(chat_id)
-    async for member in icm:
+for member in icm:
         if limit <= 5:
             string += f" » {member.user.mention}\n"
             limit += 1
